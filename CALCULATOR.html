@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+    <head>
+        <title>CALCULATOR</title>
+        <meta name ="viewport" content="width=device-width,initial-scale=1.0">
+        <meta charset="utf-8">
+            <script src="https://use.fontawesome.com/00180a1c5a.js"></script>
+          
+            <link rel="stylesheet" href="calculator.css">
+                <script src="calculator.js"></script>
+    </head>
+    <body>
+        <div id="mode" onclick="changeTheme()"><i class="fa fa-sun-o fa-lg" aria-hidden="true"></i> &nbsp &nbsp   <i class="fa fa-moon-o fa-lg" aria-hidden="true"></i></div>
+        <div id="expression">
+       </div>
+       <div id="buttons">
+           <span style="color:cyan" onmousedown="clearAll()">A/C</span>
+           <span style="color:cyan">+/-</span>
+           <span style="color:cyan" onclick=showChar("%")>%</span>
+           <span style="color:red" onclick=showChar("÷")>&divide</span>
+           <span onclick=showChar("7")>7</span>
+           <span onclick=showChar("8")>8</span>
+           <span onclick=showChar("9")>9</span>
+           <span style="color:red" onclick=showChar("x")>&times</span>
+           <span onclick=showChar("4")>4</span>
+           <span onclick=showChar("5")>5</span>
+           <span onclick=showChar("6")>6</span>
+           <span style="color:red" onclick=showChar("-")>-</span>
+           <span onclick=showChar("1")>1</span>
+           <span onclick=showChar("2")>2</span>
+           <span onclick=showChar("3")>3</span>
+           <span style="color:red" onclick=showChar("+")>+</span>
+           <span id="del" onclick="aclear()"> del</span>
+           <span onclick=showChar("0")>0</span>
+           <span onclick=showChar(".")>.</span>
+           <span style="color:red" onclick=calculate()>=</span>
+       </div>
+       </body>
